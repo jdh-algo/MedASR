@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-labelledby="title desc">
+  <title id="title">MedASR</title>
+  <desc id="desc">MedASR waveform logo for long-session speech recognition</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#93c5fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="220" rx="28" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#wave)" stroke-linecap="round" stroke-width="8">
+    <path d="M72 110h34l15-34 22 74 24-105 24 130 23-96 21 61 17-30h48"/>
+  </g>
+  <circle cx="186" cy="110" r="76" fill="none" stroke="#5eead4" stroke-opacity=".18" stroke-width="2"/>
+  <text x="340" y="108" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="700" letter-spacing="2">MedASR</text>
+  <text x="344" y="150" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="1">LONG-SESSION STREAMING ASR</text>
+</svg>

@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+data/
+logs/
+models/
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.tar
+*.tar.gz

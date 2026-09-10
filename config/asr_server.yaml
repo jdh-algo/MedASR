@@ -1,0 +1,78 @@
+gateway:
+  host: 0.0.0.0
+  port: 18080
+  cors_origins: []
+
+worker:
+  host: 127.0.0.1
+  upstream_host: 127.0.0.1
+
+auth:
+  api_key: ""
+
+download:
+  spool_dir: data/spool
+  proxy: ""
+  max_bytes: 524288000
+  timeout: 300
+  connect_timeout: 10
+  max_concurrent: 8
+  max_redirects: 3
+  allow_hosts: []
+  block_private: true
+  block_cidrs: []
+
+limits:
+  max_audio_seconds: 7200
+  max_request_bytes: 1048576
+  offline_queue_max: 64
+  max_ws_connections: 256
+  max_stream_sessions_per_card: 2
+  ws_max_msg_bytes: 1048576
+  ws_session_max_bytes: 1073741824
+  ws_auth_timeout: 10
+  ws_idle_timeout: 600
+
+default_lang: zh
+
+medasr:
+  cards: auto
+  worker_base_port: 9300
+  asr_model: Qwen/Qwen3-ASR-1.7B
+  gpu_util: 0.8
+  chunk_sec: 4.0
+  stream_window_sec: 0.0
+  rollover_min_sec: 300.0
+  rollover_max_sec: 360.0
+  seam_rms: 0.016
+  rollover_ctx_chars: 192
+  rollover_on_shrink: false
+  stall_steps: 0
+  emit_unlatch: true
+  head_gate: true
+  silence_rms: 0.002
+  silence_rel: 0.05
+  silence_roll_sec: 30.0
+  vad_enabled: true
+  vad_model: iic/speech_fsmn_vad_zh-cn-16k-common-pytorch
+  vad_chunk_ms: 200
+  vad_silence_ms: 800
+  preroll_sec: 2.0
+  step_timeout: 20.0
+  max_chunk_mult: 4
+  warmup_sec: 4.0
+  warmup_chunk_sec: 1.0
+  max_lag_sec: 120.0
+  stream_max_tokens: 64
+  offline_max_tokens: 512
+  micro_batch: true
+  batch_invariant: true
+  attention_backend: TRITON_ATTN
+  max_micro_batch: 16
+  gen_threadpool: 128
+  incr_encode: true
+  incr_block_sec: 8.0
+  max_len: 40960
+  offline_concurrency: 4
+  offline_chunk_sec: 30
+  job_timeout: 1800
